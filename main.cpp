@@ -3,6 +3,7 @@
 #include "hardware/spi.h"
 
 #include "SH1106.cpp"
+#include "pong.cpp"
 
 int main() {
     stdio_init_all();
@@ -11,6 +12,7 @@ int main() {
 
 
     SH1106::init(true);
+    PONG::gameStart();
 
     while(true);
     return 0;
